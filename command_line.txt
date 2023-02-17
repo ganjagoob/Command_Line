@@ -1,0 +1,5 @@
+1. cat
+2. cp <Source_file> <Destionation_path>
+3. cp * <destination_path>
+4. mv <Source_file> <destionation_path>
+5. rm -rf <file/folder_name>
