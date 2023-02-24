@@ -1,10 +1,10 @@
 #!/bin/bash
-#Justin Hua
+#Justin Hua
 #ITP270
 #CLI Redirection Solution
-#Create a file
+#Create a file
 touch rivers.txt
-#Add five river names to it
+#Add five river names to it
 #Make sure you are adding "amazon river" to the list
 echo -e "Amazon River\n" > rivers.txt 
 echo -e "Nile River\n"   >> rivers.txt
@@ -12,13 +12,13 @@ echo -e "Yangtze River\n" >> rivers.txt
 echo -e "Danube River\n" >> rivers.txt 
 echo -e "Potomac River\n" >> rivers.txt
 echo -e "Potomac River\n" >> rivers.txt
-#Replace the word "amazon" with "ohio"
+#Replace the word "amazon" with "ohio"
 sed 's/Amazon/Ohio/g' rivers.txt > new_rivers.txt 
-#Sort the river names alphabetically
+#Sort the river names alphabetically
 sort new_rivers.txt > new_rivers_v2.txt
-#Use command to filter out duplicates
+#Use command to filter out duplicates
 uniq new_rivers_v2.txt > new_rivers_v3.txt
-#Compare the original file and the modified copy
+#Compare the original file and the modified copy
 diff rivers.txt new_rivers_v3.txt
 
 #One-liner
